@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 - Glosario de comandos GIT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="backgroundGit"></div>
+  <div class="sm:px-2 md:px-4">
+    <div class="relative mx-auto bg-gradient-to-br from-purple-300 to-purple-500 rounded-lg">
+        <p class="text-center text-2xl"> Glosario de comandos Git</p>
+    </div>
+</div>
+
+
+  <div class="overflow-x-auto py-4 md:py-10 px-4 md:px-16 lg:px-20 xl:px-40 sm:rounded-lg py-10 px-40">
+    <table class=" text-sm text-center text-gray-500">
+        <thead class="text-xs text-gray-50 uppercase bg-purple-900">
+            <tr>
+                <th scope="col" class="px-1 py-3 "> Comando </th>
+                <th scope="col" class="px-1 py-3 "> Descripción </th>
+                <th scope="col" class="px-1 py-3"> Parametros </th>
+                <th scope="col" class="px-1 py-3 "> Ejemplo </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class=" border-b bg-purple-500 border-purple-500 ">
+                <th scope="row" class="px-2 py-2 font-medium whitespace-nowrap text-white">
+                  <p   class="text-center">git init</p>
+                </th>
+                <td class="px-2 py-2 text-black font-semibold text-center">
+                  <p>Inicializar un directorio existente como repositorio Git </p>
+                </td>
+                <td class="px-2 py-2 text-black font-semibold text-center">
+              <p>ninguno</p>
+                </td>
+                <td class="px-2 py-2 text-black font-semibold text-center">
+                  <p>git init</p>
+                </td>
+            </tr>
+         <tr class="border-b bg-purple-900 border-gray-700">
+              <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+                <p   class="text-center">git clone [url] </p>
+              </th>
+              <td class=" px-2 py-2 text-white">
+                <p>Recuperar un repositorio completo desde una ubicación alojada a través de una URL </p>
+              </td>
+              <td class=" px-2 py-2 text-white">
+                <p>[url] Enlace del repositorio remoto que será clonado</p>
+              </td>
+              <td class=" px-2 py-2  text-white">
+                <p>git clone thttps://github.com/Alessandra222/iw2023ittepic</p>
+          </td>
+          </tr>
+        
+        <tr class=" border-b bg-purple-500 border-purple-500 ">
+          <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+            <p   class="text-center">git status</p>
+          </th>
+          <td class=" px-2 py-2 text-black font-semibold text-center">
+            <p>Mostrar los archivos modificados en el directorio de trabajo, preparados para el próximo commit
+              </p>
+          </td>
+          <td class=" px-2 py-2 text-black font-semibold text-center">
+        <p>ninguno</p>
+          </td>
+          <td class=" px-2 py-2 text-black font-semibold text-center">
+            <p>git status</p>
+          </td>
+      </tr>
+   <tr class="border-b bg-purple-900 border-gray-700">
+        <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+          <p   class="text-center">git add [fichero]  </p>
+        </th>
+        <td class=" px-2 py-2 text-white">
+          <p>Añadir un archivo para el próximo commit (escenario) </p>
+        </td>
+        <td class=" px-2 py-2 text-white">
+          <p>[fichero] nombre del archivo junto con su extensión que se desea agregar</p>
+        </td>
+        <td class=" px-2 py-2  text-white">
+          <p>git add matematicas.md</p>
+    </td>
+    </tr>
+    <tr class=" border-b bg-purple-500 border-purple-500 ">
+      <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+        <p   class="text-center">git add -u</p>
+      </th>
+      <td class=" px-2 py-2 text-black font-semibold text-center">
+        <p>Actualiza el índice sólo donde ya tiene una entrada que coincide con <pathpec>. </p>
+      </td>
+      <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>-u : actualizar</p>
+      </td>
+      <td class=" px-2 py-2 text-black font-semibold text-center">
+        <p>git add -u</p>
+      </td>
+  </tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+    <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+      <p   class="text-center">git reset [fichero] </p>
+    </th>
+    <td class=" px-2 py-2 text-white">
+      <p>Desenvolver un archivo conservando los cambios en el directorio de trabajo</p>
+    </td>
+    <td class=" px-2 py-2 text-white">
+      <p>[fichero] nombre del archivo junto con su extensión.</p>
+    </td>
+    <td class=" px-2 py-2  text-white">
+      <p>git reset matematicas.md</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git reset −−soft HEADˆ </p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Desenvolver el último commit conservando los cambios en el directorio local </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>--soft : Git deshará el último commit, pero mantendrá los cambios de esos commits deshechos en tu área de preparación (staging).  </p> <br>
+<p>HEAD : es un puntero especial en Git que apunta al commit más reciente en la rama actual. </p> <BR>
+  <P>^ : se utiliza para referirse al commit padre del commit al que apunta HEAD</P>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git reset −−soft HEADˆ</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git diff </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Muestra cambios entre confirmaciones, confirmaciones y árbol de trabajo, etc.</p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>--staged : Estos comandos muestran las diferencias entre el último commit y el área de preparación (staging). Es útil para ver qué cambios se han preparado para la próxima confirmación.</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git diff</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git commit</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Hacer un nuevo commit </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p> -m “[mensaje descriptivo]” : Hace commit con su respectivo mensaje</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git commit -m "Nuevo commit"</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git branch </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Enlista las ramas </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>ninguno</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git branch</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git branch [nombre-rama]</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Crear una nueva rama en el commit actual </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p> [nombre-rama] : nombre de la nueva rama.</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git branch marin</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git checkout -b [nombre de la rama] </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Creación y desplazamiento a la rama indicada</p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>-b: Esta opción se utiliza para crear una nueva rama.</p> <br>
+  <p>[nombre-rama] : nombre de la nueva rama</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git checkout -b bautista</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git branch -d [nombre-rama]</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Elimina la rama indicada </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>-d : delete </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git branch -d marin</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git checkout </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Cambiar a otra rama y comprobarla en el directorio de trabajo </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>ninguno</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git checkout marin</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git checkout −− .</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Retomar el estado del último commit </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>ninguno</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git checkout --. </p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git merge [rama] </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Fusionar el historial de la rama especificada en la actualL </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>[rama] : nombre de la rama.</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git merge marin</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git log</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Mostra todos los commits en el historial de la rama actual
+    </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>ninguno</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git log</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git show </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Mostrar cualquier objeto en Git en formato legible para el ser humano</p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p></p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git show V2.0</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git rm [fichero]</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Eliminar el archivo del proyecto y preparar la eliminación para el commit </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>ninguno</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git rm matematicas.md</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git mv [ruta existente] [nueva ruta] </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Renombrar un archivo o directorio o cambiar la ruta de un archivo existente y realizar el movimiento </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>ninguno</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git mv matematicas.md CarpetaA <br>
+     git mv matematicas.md ecuaciones.md</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git pull</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Obtener y fusionar los commits de la remota a la rama local </p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>ninguno</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git pull</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git push </p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Envia los cambios locales a un repositorio remoto. </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>[--tags] : Empujar etiquetas <br>
+     [--f] : Si necesitas forzar la actualización de la rama remota <br>
+     [--all] : Empujar todas las ramas </p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git push -f origin <br>
+  git push --tags origin</p>
+</td>
+</tr>
+<tr class=" border-b bg-purple-500 border-purple-500 ">
+  <th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+    <p   class="text-center">git tag</p>
+  </th>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>Visualizar todos los tags</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+<p>[-d] : eliminar <br>
+   [-a] : etiqueta anotada <br>
+   [-m] : mensaje de la etiqueta</p>
+  </td>
+  <td class=" px-2 py-2 text-black font-semibold text-center">
+    <p>git tag -a v1.0 -m "version lanzada"</p>
+  </td>
+</tr>
+<tr class="border-b bg-purple-900 border-gray-700">
+<th scope="row" class=" px-2 py-2 font-medium whitespace-nowrap text-white">
+  <p   class="text-center">git stash</p>
+</th>
+<td class=" px-2 py-2 text-white">
+  <p>Guarda temporalmente los cambios que se tienen en el directorio de trabajo </p>
+</td>
+<td class=" px-2 py-2 text-white">
+  <p>[list] : enlista los stashes. <br>
+  [apply [nombre]] : aplicar stash. <br>
+[drop] : eliminar stash. <br>
+[pop] : Aplicar y eliminar un stash</p>
+</td>
+<td class=" px-2 py-2  text-white">
+  <p>git stash <br>
+   git stash list <br>
+  git stash apply marin <br>
+git stash drop marin<br>
+git stash pop marin.</p>
+</td>
+</tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="overlay">
+  <h1 class="text-2xl">Conclusión</h1>
+  <p>
+    En el transcurso de este trabajo,se recopilo una lista  de comandos utilizados en Git, uno de los sistemas de control de versiones más ampliamente utilizados en el desarrollo de software. Durante esta investigación, se identificaron una variedad de comandos esenciales que abarcan desde la inicialización de un repositorio Git hasta la gestión de ramas, la sincronización con repositorios remotos y la resolución de conflictos. Cada comando desempeña un papel crucial en el flujo de trabajo de Git, permitiendo a los desarrolladores realizar tareas específicas de manera eficiente y efectiva.</p>
+  
+</div>
+
+
+
+</body>
+</html>
